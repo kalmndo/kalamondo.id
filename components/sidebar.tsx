@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { LayoutGroup, motion } from "framer-motion";
+import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import { LayoutGroup, motion } from 'framer-motion';
 
 const navItems = {
-  "/": {
-    name: "home",
+  '/': {
+    name: 'home',
   },
-  "/about": {
-    name: "about",
+  '/about': {
+    name: 'about',
   },
-  "/blog": {
-    name: "blog",
+  '/blog': {
+    name: 'blog',
   },
-  "/projects": {
-    name: "projects",
+  '/projects': {
+    name: 'projects',
   },
 };
 
@@ -25,9 +25,9 @@ function Logo() {
     <Link aria-label="Lee Robinson" href="/">
       <motion.svg
         className="text-black dark:text-white h-[25px] md:h-[37px]"
-        width="25"
-        height="37"
-        viewBox="0 0 232 316"
+        width="23"
+        height="19"
+        viewBox="0 0 23 19"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -42,23 +42,12 @@ function Logo() {
           }}
           transition={{
             duration: 0.5,
-            type: "spring",
+            type: 'spring',
             stiffness: 50,
           }}
-          d="M39 316V0"
+          d="M11.5 0L22.3253 18.75H0.674683L11.5 0Z"
           stroke="currentColor"
-          strokeWidth={78}
-        />
-        <motion.path
-          initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.5,
-            type: "spring",
-            stiffness: 50,
-          }}
-          d="M232 314.998H129.852L232 232.887V314.998Z"
-          fill="currentColor"
+          strokeWidth={2}
         />
       </motion.svg>
     </Link>
@@ -66,9 +55,9 @@ function Logo() {
 }
 
 export default function Navbar() {
-  let pathname = usePathname() || "/";
-  if (pathname.includes("/blog/")) {
-    pathname = "/blog";
+  let pathname = usePathname() || '/';
+  if (pathname.includes('/blog/')) {
+    pathname = '/blog';
   }
 
   return (
@@ -90,10 +79,10 @@ export default function Navbar() {
                     key={path}
                     href={path}
                     className={clsx(
-                      "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle",
+                      'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
                       {
-                        "text-neutral-500": !isActive,
-                        "font-bold": isActive,
+                        'text-neutral-500': !isActive,
+                        'font-bold': isActive,
                       }
                     )}
                   >
@@ -104,7 +93,7 @@ export default function Navbar() {
                           className="absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]"
                           layoutId="sidebar"
                           transition={{
-                            type: "spring",
+                            type: 'spring',
                             stiffness: 350,
                             damping: 30,
                           }}

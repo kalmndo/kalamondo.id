@@ -1,4 +1,9 @@
-import { ArrowIcon, GitHubIcon, InstagramIcon, TwitterIcon } from "components/icons";
+import {
+  ArrowIcon,
+  GitHubIcon,
+  InstagramIcon,
+  TwitterIcon,
+} from 'components/icons';
 
 export default function AboutPage() {
   return (
@@ -8,7 +13,7 @@ export default function AboutPage() {
         <p>Hi, I'm Adam Kalamondo. You can call me adam.</p>
         <p>
           I'm currently the <b>Led Full Stack Engineer</b> at Desapintar, my
-          focus is on contributing to the development of the company{" "}
+          focus is on contributing to the development of the company{' '}
           <b>in any way I can</b>.
         </p>
         <hr />
@@ -30,7 +35,7 @@ export default function AboutPage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://twitter.com/kalmndo"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
@@ -42,7 +47,7 @@ export default function AboutPage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/leerob"
+            href="https://github.com/kalmndo"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
@@ -54,12 +59,12 @@ export default function AboutPage() {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.youtube.com/@leerob"
+            href="https://www.instagram.com/adamkalamondo/"
             className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
           >
             <div className="flex items-center">
               <InstagramIcon />
-              <div className="ml-3">YouTube</div>
+              <div className="ml-3">Instagram</div>
             </div>
             <ArrowIcon />
           </a>

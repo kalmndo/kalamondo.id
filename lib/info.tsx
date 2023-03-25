@@ -5,7 +5,7 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hey, I'm a developer who big fan of React.js. I work at Desapintar as a
+      Hey, I'm a developer who is a big fan of React.js. I work at Desapintar as a
       Software Engineer.
     </>
   );

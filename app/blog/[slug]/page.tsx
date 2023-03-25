@@ -28,8 +28,8 @@ export async function generateMetadata({
     slug,
   } = post;
   const ogImage = image
-    ? `https://leerob.io${image}`
-    : `https://leerob.io/api/og?title=${title}`;
+    ? `http://localhost:3000${image}`
+    : `http://localhost:3000/api/og?title=${title}`;
 
   return {
     title,
@@ -39,7 +39,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `https://leerob.io/blog/${slug}`,
+      url: `http://localhost:3000/blog/${slug}`,
       images: [
         {
           url: ogImage,
@@ -57,7 +57,6 @@ export async function generateMetadata({
 
 export default async function Blog({ params }) {
   const post = allBlogs.find((post) => post.slug === params.slug);
-
   if (!post) {
     notFound();
   }
@@ -66,7 +65,7 @@ export default async function Blog({ params }) {
 
   return (
     <section>
-      <script type="application/ld+json">
+      <script >
         {JSON.stringify(post.structuredData)}
       </script>
       <h1 className="font-bold text-3xl font-serif max-w-[650px]">

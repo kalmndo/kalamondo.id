@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Script from "next/script"
+import Script from 'next/script';
 import { notFound } from 'next/navigation';
 import { Mdx } from 'components/mdx';
 import { allBlogs } from 'contentlayer/generated';
@@ -29,8 +29,8 @@ export async function generateMetadata({
     slug,
   } = post;
   const ogImage = image
-    ? `http://localhost:3000${image}`
-    : `http://localhost:3000/api/og?title=${title}`;
+    ? `http://kalamondo.id${image}`
+    : `http://kalamondo.id/api/og?title=${title}`;
 
   return {
     title,
@@ -40,7 +40,7 @@ export async function generateMetadata({
       description,
       type: 'article',
       publishedTime,
-      url: `http://localhost:3000/blog/${slug}`,
+      url: `http://kalamondo.id/blog/${slug}`,
       images: [
         {
           url: ogImage,
@@ -66,7 +66,12 @@ export default async function Blog({ params }) {
 
   return (
     <section>
-    <Script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(post.structuredData)}} />
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(post.structuredData),
+        }}
+      />
       <h1 className="font-bold text-3xl font-serif max-w-[650px]">
         <Balancer>{post.title}</Balancer>
       </h1>

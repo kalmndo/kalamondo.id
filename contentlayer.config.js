@@ -29,9 +29,9 @@ const computedFields = {
       dateModified: doc.publishedAt,
       description: doc.summary,
       image: doc.image
-        ? `https://leerob.io${doc.image}`
-        : `https://leerob.io/api/og?title=${doc.title}`,
-      url: `https://leerob.io/blog/${doc._raw.flattenedPath}`,
+        ? `https://kalamondo.id${doc.image}`
+        : `https://kalamondo.id/api/og?title=${doc.title}`,
+      url: `https://kalamondo.id/blog/${doc._raw.flattenedPath}`,
       author: {
         '@type': 'Person',
         name: 'Adam Kalamondo',

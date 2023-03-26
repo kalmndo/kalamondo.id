@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Adam Kalamondo',
     description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
+    url: 'https://kalamondo.id',
     siteName: 'Adam Kalamondo',
     images: [
       {
-        url: 'https://leerob.io/og.jpg',
+        url: 'https://kalamondo.id/og.jpg',
         width: 1920,
         height: 1080,
       },

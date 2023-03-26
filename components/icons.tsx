@@ -115,7 +115,45 @@ export function InstagramIcon() {
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-
     </svg>
-  )
+  );
 }
+
+import React from 'react';
+
+function Wee() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 186 131"
+    >
+      <rect
+        width="44.871"
+        height="104.495"
+        x="8.879"
+        y="31.315"
+        strokeWidth="13"
+        rx="22.436"
+        transform="rotate(-30 8.88 31.315)"
+      ></rect>
+      <rect
+        width="44.871"
+        height="104.495"
+        x="67.879"
+        y="31.315"
+        strokeWidth="13"
+        rx="22.436"
+        transform="rotate(-30 67.88 31.315)"
+      ></rect>
+      <path
+        strokeWidth="12"
+        d="M127.5 43.5l7.5-12 4.629-6.384a21.116 21.116 0 0110.58-7.69v0a21.115 21.115 0 0117.918 2.314l.805.516A22.504 22.504 0 01179.08 42.21v0a22.509 22.509 0 01-2.71 8.059l-10.87 19.23-12.395 20.2a23.044 23.044 0 00-1.864 3.773L147 104.5"
+      ></path>
+    </svg>
+  );
+}
+
+export default Wee;

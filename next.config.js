@@ -37,7 +37,7 @@ const nextConfig = {
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self' vercel.live;
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live umami-silk-eight.vercel.app;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.vercel-insights.com vercel.live https://analytics-umami.vercel.app;
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
     media-src 'none';

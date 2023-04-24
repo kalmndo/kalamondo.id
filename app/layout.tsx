@@ -75,13 +75,13 @@ export default function RootLayout({
         <Sidebar />
         <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
           {children}
-          <Analytics />
+          {/* <Analytics /> */}
         </main>
         <Script
-          async
           src="https://umami-silk-eight.vercel.app/script.js"
           data-website-id="46191a75-5b73-46dc-ae25-5531a2aff767"
-          strategy="beforeInteractive"
+          data-host-url="https://kalamondo.id"
+          strategy="lazyOnload"
         />
       </body>
     </html>

@@ -80,7 +80,6 @@ export default function RootLayout({
         <Script
           src="https://umami-silk-eight.vercel.app/script.js"
           data-website-id="46191a75-5b73-46dc-ae25-5531a2aff767"
-          data-host-url="https://kalamondo.id"
           strategy="lazyOnload"
         />
       </body>

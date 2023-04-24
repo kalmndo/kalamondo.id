@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Sidebar from '../components/sidebar';
 import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 
 const kaisei = localFont({
   src: '../public/fonts/kaisei-tokumin-latin-700-normal.woff2',
@@ -76,6 +77,12 @@ export default function RootLayout({
           {children}
           <Analytics />
         </main>
+        <Script
+          async
+          src="https://umami-silk-eight.vercel.app/script.js"
+          data-website-id="46191a75-5b73-46dc-ae25-5531a2aff767"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );

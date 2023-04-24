@@ -78,7 +78,7 @@ export default function RootLayout({
           {/* <Analytics /> */}
         </main>
         <Script
-          src="https://analytics-umami.app/script.js"
+          src="https://analytics-umami.vercel.app/script.js"
           data-website-id="46191a75-5b73-46dc-ae25-5531a2aff767"
           strategy="lazyOnload"
         />

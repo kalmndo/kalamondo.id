@@ -12,9 +12,7 @@ export default function AboutPage() {
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>Hi, I'm Adam Kalamondo. You can call me adam.</p>
         <p>
-          I'm currently the <b>Led Full Stack Engineer</b> at Desapintar, my
-          focus is on contributing to the development of the company{' '}
-          <b>in any way I can</b>.
+          I'm currently an <b>Unemployement</b>.
         </p>
         <hr />
         <p>
